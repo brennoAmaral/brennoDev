@@ -1,0 +1,39 @@
+.dark{
+  --background: 31, 30, 47;
+
+  --letters: 255, 255, 255,
+}
+
+.light{
+  --background: 235, 235, 235;
+
+  --letters: 31, 30, 47,
+}
+
+:root {
+  --foreground-rgb: 235, 235, 235;
+  --background: 235, 235, 235;
+  --border: 15, 222, 141;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --foreground-rgb: 31, 30, 47; */
+    --background: 31, 30, 47;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

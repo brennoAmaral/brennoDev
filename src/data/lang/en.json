@@ -1,0 +1,9 @@
+{
+  "langs":{
+    "pt": "Portuguese", 
+    "en": "English"
+  },
+  "index": {
+    "title": "Hello world!"
+  }
+}
