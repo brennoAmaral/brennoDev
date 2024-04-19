@@ -37,6 +37,12 @@ export default function useLangButton(){
     return 'en'
   }
 
+  function closeMenu(){
+    const menu = window.document.querySelector<HTMLInputElement>('#menu')
+    if(!menu?.checked) return
+    window.document.getElementById('menu')?.click()
+  }
+
   function bgColorCurrentLang(acronymLang: 'pt' | 'en'){
     if(acronymLang === currentLang()){
       return 'bg-tertiary'
@@ -53,9 +59,10 @@ export default function useLangButton(){
     matches[0] = `/${acronymLang}`
 
     const newUrl = matches.join('')
-    setLangMenu(false)
+    closeMenu()
     router.push(newUrl)
   }
+
   
-  return{langMenu, setLangMenu, changeLang, options, bgColorCurrentLang}
+  return{langMenu, setLangMenu, changeLang, options, bgColorCurrentLang, closeMenu, pathName}
 }

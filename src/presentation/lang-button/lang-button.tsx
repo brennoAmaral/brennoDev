@@ -1,28 +1,40 @@
 'use client'
 import useLangButton from "@/data/use-lang-button"
 import SvgTranslate from "../svg/svg-lang"
-
+import styleLangButton from "./style-lang-button"
+import SvgClose from "../svg/svg-close"
 export default function LangButton() {
-  const {setLangMenu, options, changeLang, bgColorCurrentLang, langMenu} =  useLangButton()
+  const { setLangMenu, options, changeLang, bgColorCurrentLang, langMenu, pathName } = useLangButton()
 
   return (
-    <label className="w-10 h-10 rounded-full bg-tertiary bg-opacity-30 flex justify-center items-center required relative"
-      onClick={() => setLangMenu(true)}
+    <div
+      className={styleLangButton.wrapper}
     >
-      <SvgTranslate />
-      <div style={{transform: langMenu? 'scaleX(1)' : 'scaleX(0)'}} className=" border-2 p-2 overflow-hidden flex flex-col bg-background-dark border-tertiary  rounded-lg gap-2 absolute right-0 top-0">
-      {
-        options.map((value, key) => (
-          <div key={key} 
-            className={`${bgColorCurrentLang(value.acronymLang)} text-tertiary bg-opacity-10 flex flex-row gap-3 items-center rounded-md ps-1 py-2 pe-3 hover:bg-tertiary hover:bg-opacity-25`}
-            onClick={()=> changeLang(value.acronymLang)}
+      <div className={`${styleLangButton.label} ${!langMenu ? 'z-20': 'z-0'}`}
+        onClick={() => setLangMenu(true)}
+
+      >
+        <SvgTranslate />
+      </div>  
+      <div
+        onMouseLeave={() => setLangMenu(false)}
+        className={`h-${langMenu ? 'auto' : '0'} w-${langMenu ? 'auto' : '0'} ${langMenu ? 'border-2 p-2 opacity-100' : ''} ${!langMenu ? 'z-0': 'z-20'}  ${styleLangButton.divMenu}`}>
+        <div onClick={()=>setLangMenu(false)} className="w-100 flex justify-end"><SvgClose/></div>
+        {
+          options.map((value, key) => {
+            if(pathName.includes(value.acronymLang)) return
+            return(
+            <button key={key}
+              className={`${bgColorCurrentLang(value.acronymLang)} ${styleLangButton.options}`}
+              onClick={() => changeLang(value.acronymLang)}
+              disabled={!langMenu}
             >
-            <value.svg/>
-            {value.fullLang}
-          </div>
-        ))
-      }
+              <value.svg />
+              {value.fullLang}
+            </button>
+          )})
+        }
+      </div>
     </div>
-    </label>
   )
 }
