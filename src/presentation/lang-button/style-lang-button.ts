@@ -3,11 +3,15 @@ import { HTMLAttributes, HtmlHTMLAttributes } from "react";
 type IClass<T> = HtmlHTMLAttributes<T>["className"];
 type IClassDiv = IClass<HTMLDivElement>;
 
-interface IStyleLangButton {
+export interface IStyleLangButton {
   wrapper: IClassDiv;
   label: IClass<HTMLLabelElement>;
+  labelWhenMenuIsUp: IClass<HTMLLabelElement>;
   divMenu: IClassDiv;
-  options: IClassDiv;
+  styleOptions: IClassDiv;
+  menuOpen:  IClassDiv;
+  menuClose: IClassDiv;
+  divCloseButton: IClassDiv;
 }
 
 const styleLangButton: IStyleLangButton = {
@@ -23,6 +27,15 @@ const styleLangButton: IStyleLangButton = {
     absolute
     right-0
     top-[-17px]
+    z-20
+  `,
+  labelWhenMenuIsUp:`
+    z-0
+  `,
+  divCloseButton:`
+    w-100
+    flex
+    justify-end
   `,
   divMenu: `
     transition-all
@@ -39,7 +52,21 @@ const styleLangButton: IStyleLangButton = {
     absolute right-0
     top-[-17px]
   `,
-  options: `
+  menuOpen:
+  `
+    w-auto
+    h-auto
+    border-2
+    p-2
+    opacity-100
+    z-20
+  `,
+  menuClose:`
+    w-0
+    h-0
+    z-0
+  `,
+  styleOptions: `
     text-tertiary
     bg-opacity-10
     flex flex-row

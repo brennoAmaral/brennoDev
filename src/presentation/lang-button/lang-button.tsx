@@ -2,39 +2,43 @@
 import useLangButton from "@/data/use-lang-button"
 import SvgTranslate from "../svg/svg-lang"
 import styleLangButton from "./style-lang-button"
-import SvgClose from "../svg/svg-close"
+import LangMenu from "./lang-menu"
+
 export default function LangButton() {
-  const { setLangMenu, options, changeLang, bgColorCurrentLang, langMenu, pathName } = useLangButton()
+
+  const { 
+    setLangMenu,
+    listOptions,
+    changeLang,
+    bgColorCurrentLang,
+    langMenu,
+    pathName 
+  } = useLangButton()
+
+  const {
+    label,
+    wrapper,
+    labelWhenMenuIsUp,
+  } = styleLangButton
 
   return (
     <div
-      className={styleLangButton.wrapper}
+      className={wrapper}
     >
-      <div className={`${styleLangButton.label} ${!langMenu ? 'z-20': 'z-0'}`}
+      <div className={`${label} ${!langMenu ?? labelWhenMenuIsUp}`}
         onClick={() => setLangMenu(true)}
-
       >
         <SvgTranslate />
       </div>  
-      <div
-        onMouseLeave={() => setLangMenu(false)}
-        className={`h-${langMenu ? 'auto' : '0'} w-${langMenu ? 'auto' : '0'} ${langMenu ? 'border-2 p-2 opacity-100' : ''} ${!langMenu ? 'z-0': 'z-20'}  ${styleLangButton.divMenu}`}>
-        <div onClick={()=>setLangMenu(false)} className="w-100 flex justify-end"><SvgClose/></div>
-        {
-          options.map((value, key) => {
-            if(pathName.includes(value.acronymLang)) return
-            return(
-            <button key={key}
-              className={`${bgColorCurrentLang(value.acronymLang)} ${styleLangButton.options}`}
-              onClick={() => changeLang(value.acronymLang)}
-              disabled={!langMenu}
-            >
-              <value.svg />
-              {value.fullLang}
-            </button>
-          )})
-        }
-      </div>
+      <LangMenu
+        bgColorCurrentLang={bgColorCurrentLang}
+        changeLang={changeLang}
+        langMenu={langMenu}
+        listOptions={listOptions}
+        pathName={pathName}
+        setLangMenu={setLangMenu}
+        styleLangButton={styleLangButton}
+      />
     </div>
   )
 }

@@ -20,7 +20,7 @@ export default function RootLayout({
 
   return (
     <html lang={locale} className="dark">
-      <body className={`${inter.className} dark`} style={{height: '200vh'}}>
+      <body className={`${inter.className} dark`} >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
