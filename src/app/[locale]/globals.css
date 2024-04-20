@@ -14,19 +14,45 @@
   --foreground-rgb: 235, 235, 235;
   --background: 235, 235, 235;
   --border: 15, 222, 141;
+  --color-primary: 115,65,255;
+  --color-terciary: 255, 156, 40;
+  --color-terciary-30: 255, 156, 40, 0.3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 31, 30, 47; */
-    --background: 31, 30, 47;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background));
+  overflow: hidden;
 }
+
+*:not(svg){
+  background: rgb(var(--background));
+}
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 8px;
+  
+}
+
+/* Track (faixa) da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: rgba(var(--color-terciary-30));
+  margin-top: 12px;
+  border-radius: 8px;
+}
+
+/* Alça (thumb) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-terciary));
+  border-radius: 5px;
+}
+
+/* Hover na alça da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 @layer utilities {
   .text-balance {
