@@ -1,19 +1,10 @@
-.dark{
-  --background: 31, 30, 47;
 
-  --letters: 255, 255, 255,
-}
-
-.light{
-  --background: 235, 235, 235;
-
-  --letters: 31, 30, 47,
-}
 
 :root {
   --foreground-rgb: 235, 235, 235;
   --background: 235, 235, 235;
   --border: 15, 222, 141;
+  --background: 31, 30, 47;
   --color-primary: 115,65,255;
   --color-terciary: 255, 156, 40;
   --color-terciary-30: 255, 156, 40, 0.3;
