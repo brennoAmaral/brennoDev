@@ -30,7 +30,7 @@ body {
   background: rgb(var(--background));
 }
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
   border-radius: 8px;
   
 }
@@ -38,7 +38,7 @@ body {
 /* Track (faixa) da barra de rolagem */
 ::-webkit-scrollbar-track {
   background: rgba(var(--color-terciary-30));
-  margin-top: 12px;
+  margin-top: 10px;
   border-radius: 8px;
 }
 
