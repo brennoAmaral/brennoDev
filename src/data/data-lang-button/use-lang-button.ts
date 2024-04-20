@@ -3,7 +3,7 @@ import {
   ILangOptions,
   ILangsAcronymAvailable,
   IUseLangButton,
-} from "@/domain/types/type-use-lang-button";
+} from "@/domain/types/langa-button/type-use-lang-button";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { useTranslations } from "next-intl";

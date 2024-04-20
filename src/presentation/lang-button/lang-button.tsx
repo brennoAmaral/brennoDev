@@ -3,7 +3,7 @@ import useLangButton from "@/data/data-lang-button/use-lang-button"
 import SvgTranslate from "../svg/svg-lang"
 import styleLangButton from "./style-lang-button"
 import LangMenu from "./lang-menu"
-import { ILangMenu } from "@/domain/types/type-lang-menu"
+import { ILangMenu } from "@/domain/types/langa-button/type-lang-menu"
 
 export default function LangButton() {
 

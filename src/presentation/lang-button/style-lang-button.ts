@@ -1,17 +1,6 @@
-import { IClass, IClassDiv } from "@/domain/types/type-style";
+import { IStyleLangButton } from "@/domain/types/langa-button/type-use-lang-button";
 
-export interface IStyleLangButton {
-  wrapper: IClassDiv;
-  label: IClass<HTMLLabelElement>;
-  labelWhenMenuIsUp: IClass<HTMLLabelElement>;
-  divMenu: IClassDiv;
-  styleOptions: IClassDiv;
-  menuOpen: IClassDiv;
-  menuClose: IClassDiv;
-  divCloseButton: IClassDiv;
-}
 
-export interface IStyleLangMenu extends Omit<IStyleLangButton, "wrapper" | "label" | "labelWhenMenuIsUp"> {}
 
 const styleLangButton: IStyleLangButton = {
   wrapper: "relative",

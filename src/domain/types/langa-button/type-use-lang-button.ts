@@ -1,3 +1,5 @@
+import { IClass, IClassDiv } from "../type-style";
+
 export type ILangsAcronymAvailable = "pt" | "en";
 
 export interface ILangOptions {
@@ -21,3 +23,16 @@ export interface IUseLangButton {
     changeSizeMenu: () => string;
   }
 }
+
+export interface IStyleLangButton {
+  wrapper: IClassDiv;
+  label: IClass<HTMLLabelElement>;
+  labelWhenMenuIsUp: IClass<HTMLLabelElement>;
+  divMenu: IClassDiv;
+  styleOptions: IClassDiv;
+  menuOpen: IClassDiv;
+  menuClose: IClassDiv;
+  divCloseButton: IClassDiv;
+}
+
+export interface IStyleLangMenu extends Omit<IStyleLangButton, "wrapper" | "label" | "labelWhenMenuIsUp"> {}
