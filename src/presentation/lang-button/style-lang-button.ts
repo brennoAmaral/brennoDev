@@ -1,7 +1,4 @@
-import { HTMLAttributes, HtmlHTMLAttributes } from "react";
-
-type IClass<T> = HtmlHTMLAttributes<T>["className"];
-type IClassDiv = IClass<HTMLDivElement>;
+import { IClass, IClassDiv } from "@/domain/types/type-style";
 
 export interface IStyleLangButton {
   wrapper: IClassDiv;
@@ -19,8 +16,8 @@ export interface IStyleLangMenu extends Omit<IStyleLangButton, "wrapper" | "labe
 const styleLangButton: IStyleLangButton = {
   wrapper: "relative",
   label: `
-    w-10
-    h-10
+    w-9
+    h-9
     rounded-full
     bg-tertiary
     bg-opacity-30
