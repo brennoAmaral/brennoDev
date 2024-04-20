@@ -3,10 +3,9 @@ import SvgClose from "../svg/svg-close";
 
 export default function LangMenu(
   {
-    bgColorCurrentLang,
     changeLang,
     langMenu,
-    listOptions,
+    langListOptions,
     pathName,
     setLangMenu,
     styleLangButton: {
@@ -28,11 +27,11 @@ export default function LangMenu(
         <SvgClose />
       </div>
       {
-        listOptions.map((value, key) => {
+        langListOptions.map((value, key) => {
           if (pathName.includes(value.acronymLang)) return
           return (
             <button key={key}
-              className={`${bgColorCurrentLang(value.acronymLang)} ${styleOptions}`}
+              className={`${styleOptions}`}
               onClick={() => changeLang(value.acronymLang)}
               disabled={!langMenu}
             >

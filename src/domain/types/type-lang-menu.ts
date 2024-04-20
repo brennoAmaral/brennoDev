@@ -1,12 +1,11 @@
-import { IStyleLangButton } from "@/presentation/lang-button/style-lang-button";
+import { IStyleLangMenu } from "@/presentation/lang-button/style-lang-button";
 import { ILangOptions, ILangsAcronymAvailable } from "./type-use-lang-button";
 
 export interface ILangMenu {
-  styleLangButton: IStyleLangButton
+  styleLangButton: IStyleLangMenu
   langMenu: boolean
   pathName: string
-  listOptions: ILangOptions[]
-  bgColorCurrentLang:(acronymLang: ILangsAcronymAvailable)=>'bg-tertiary'|void
+  langListOptions: ILangOptions[]
   changeLang:(acronymLang: ILangsAcronymAvailable)=>void
   setLangMenu: (value: boolean)=> void
 }

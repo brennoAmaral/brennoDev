@@ -9,13 +9,15 @@ export interface IStyleLangButton {
   labelWhenMenuIsUp: IClass<HTMLLabelElement>;
   divMenu: IClassDiv;
   styleOptions: IClassDiv;
-  menuOpen:  IClassDiv;
+  menuOpen: IClassDiv;
   menuClose: IClassDiv;
   divCloseButton: IClassDiv;
 }
 
+export interface IStyleLangMenu extends Omit<IStyleLangButton, "wrapper" | "label" | "labelWhenMenuIsUp"> {}
+
 const styleLangButton: IStyleLangButton = {
-  wrapper: 'relative',
+  wrapper: "relative",
   label: `
     w-10
     h-10
@@ -29,10 +31,10 @@ const styleLangButton: IStyleLangButton = {
     top-[-17px]
     z-20
   `,
-  labelWhenMenuIsUp:`
+  labelWhenMenuIsUp: `
     z-0
   `,
-  divCloseButton:`
+  divCloseButton: `
     w-100
     flex
     justify-end
@@ -49,11 +51,11 @@ const styleLangButton: IStyleLangButton = {
     border-tertiary
     rounded-lg
     gap-2
-    absolute right-0
+    absolute 
+    right-0
     top-[-17px]
   `,
-  menuOpen:
-  `
+  menuOpen: `
     w-auto
     h-auto
     border-2
@@ -61,14 +63,13 @@ const styleLangButton: IStyleLangButton = {
     opacity-100
     z-20
   `,
-  menuClose:`
+  menuClose: `
     w-0
     h-0
     z-0
   `,
   styleOptions: `
     text-tertiary
-    bg-opacity-10
     flex flex-row
     gap-3
     items-center
@@ -77,7 +78,7 @@ const styleLangButton: IStyleLangButton = {
     py-2
     pe-3
     hover:bg-tertiary
-    hover:bg-opacity-25
+    hover:bg-opacity-15
   `,
 };
 

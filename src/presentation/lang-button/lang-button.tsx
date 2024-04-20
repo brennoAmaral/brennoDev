@@ -1,19 +1,22 @@
 'use client'
-import useLangButton from "@/data/use-lang-button"
+import useLangButton from "@/data/data-lang-button/use-lang-button"
 import SvgTranslate from "../svg/svg-lang"
 import styleLangButton from "./style-lang-button"
 import LangMenu from "./lang-menu"
+import { ILangMenu } from "@/domain/types/type-lang-menu"
 
 export default function LangButton() {
 
   const { 
     setLangMenu,
-    listOptions,
-    changeLang,
-    bgColorCurrentLang,
     langMenu,
-    pathName 
+    langMenuHooks
   } = useLangButton()
+
+  const langMenuParams: ILangMenu = {
+    ...langMenuHooks,
+    styleLangButton
+  }
 
   const {
     label,
@@ -31,13 +34,7 @@ export default function LangButton() {
         <SvgTranslate />
       </div>  
       <LangMenu
-        bgColorCurrentLang={bgColorCurrentLang}
-        changeLang={changeLang}
-        langMenu={langMenu}
-        listOptions={listOptions}
-        pathName={pathName}
-        setLangMenu={setLangMenu}
-        styleLangButton={styleLangButton}
+        {...langMenuParams}
       />
     </div>
   )
