@@ -1,15 +1,11 @@
 'use client'
-import { useTranslations } from "next-intl";
-import styleRootPage from "./style-page";
+import PageHome from "@/presentation/pages/page-home";
 
 
 export default function Home() {
-  const texts = useTranslations('index')
   return (
-    <div className={styleRootPage.div}>
-
-        {texts('title')}
-    
+    <div className="overflow-y-auto">
+      <PageHome/>
     </div>
   );
 }

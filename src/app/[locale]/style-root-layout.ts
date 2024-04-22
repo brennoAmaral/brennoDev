@@ -1,4 +1,4 @@
-import { IStyleRootLayout } from "@/domain/types/root/type-layout";
+import { IStyleRootLayout } from "@/domain/types/root/type-root-layout";
 
 const styleRootLayout: IStyleRootLayout = {
   body: 'relative'
