@@ -1,9 +1,9 @@
 'use client'
 import useLangButton from "@/data/data-lang-button/use-lang-button"
-import SvgTranslate from "../svg/svg-lang"
-import styleLangButton from "./style-lang-button"
-import LangMenu from "./lang-menu"
 import { ILangMenu } from "@/domain/types/langa-button/type-lang-menu"
+import SvgTranslate from "../svg/svg-lang"
+import LangMenu from "./lang-menu"
+import styleLangButton from "./style-lang-button"
 
 export default function LangButton() {
 
