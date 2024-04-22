@@ -17,32 +17,33 @@ body {
   overflow: hidden;
 }
 
-*:not(svg){
-  background: rgb(var(--background));
+*{
+  background: transparent;
 }
+
 ::-webkit-scrollbar {
+  width: 0px;
+}
+/* ::-webkit-scrollbar {
   width: 4px;
   border-radius: 8px;
-  
-}
+  background-color: transparent;
+} */
 
 /* Track (faixa) da barra de rolagem */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: rgba(var(--color-terciary-30));
-  margin-top: 10px;
+  padding-top: 10px;
   border-radius: 8px;
-}
+} */
 
 /* Alça (thumb) da barra de rolagem */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: rgb(var(--color-terciary));
   border-radius: 5px;
-}
+} */
 
-/* Hover na alça da barra de rolagem */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+
 
 
 @layer utilities {
