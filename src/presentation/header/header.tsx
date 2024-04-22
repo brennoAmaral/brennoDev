@@ -3,11 +3,14 @@ import SvgBrennoDev from "../svg/svg-brenno-dev";
 import styleHeader from "./style-header";
 
 export default function HeaderApp() {
+  const {header, toolbar} = styleHeader
   return (
-    <header id="header" className={styleHeader.header}>
+    <div className={header}>
+      <div className={toolbar}>
 
         <SvgBrennoDev />
         <LangButton />
-    </header>
+      </div>
+    </div>
   )
 }
