@@ -8,7 +8,7 @@ const stylePageHome: IStylePageHome = {
   avatar:{
     header:`
       w-[100vw]
-      sm:w-auto
+      
       p-5
 
       bg-gradient-to-b 
@@ -30,7 +30,6 @@ const stylePageHome: IStylePageHome = {
       flex-wrap
       justify-center
       items-center
-      max-w-[1260px]
       gap-10
     `,
     image: `
