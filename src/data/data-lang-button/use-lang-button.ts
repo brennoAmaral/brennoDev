@@ -3,12 +3,12 @@ import {
   ILangOptions,
   ILangsAcronymAvailable,
   IUseLangButton,
-} from "@/domain/types/langa-button/type-use-lang-button";
-import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
-import { useTranslations } from "next-intl";
+} from "@/domain/types/components/lang-button/type-use-lang-button";
 import SvgBr from "@/presentation/svg/svg-br";
 import SvgUsa from "@/presentation/svg/svg-usa";
+import { useTranslations } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function useLangButton(): IUseLangButton {
   const router = useRouter();

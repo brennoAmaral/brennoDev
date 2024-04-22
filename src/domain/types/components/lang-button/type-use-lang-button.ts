@@ -1,4 +1,4 @@
-import { IClass, IClassDiv } from "../type-style";
+import { IClass, IClassDiv } from "../../type-style";
 
 export type ILangsAcronymAvailable = "pt" | "en";
 

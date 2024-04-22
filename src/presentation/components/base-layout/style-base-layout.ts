@@ -1,4 +1,4 @@
-import { IStyleBaseLayout } from "@/domain/types/base-layout/type-base-layout";
+import { IStyleBaseLayout } from "@/domain/types/components/base-layout/type-base-layout";
 
 const styleBaseLayout: IStyleBaseLayout = {
   div: `

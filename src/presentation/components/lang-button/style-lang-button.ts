@@ -1,4 +1,4 @@
-import { IStyleLangButton } from "@/domain/types/langa-button/type-use-lang-button";
+import { IStyleLangButton } from "@/domain/types/components/lang-button/type-use-lang-button";
 
 
 
