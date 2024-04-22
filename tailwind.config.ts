@@ -6,7 +6,6 @@ const config: Config = {
     "./src/presentation/**/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {

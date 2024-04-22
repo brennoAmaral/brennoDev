@@ -1,32 +1,50 @@
-.dark{
-  --background: 31, 30, 47;
 
-  --letters: 255, 255, 255,
-}
-
-.light{
-  --background: 235, 235, 235;
-
-  --letters: 31, 30, 47,
-}
 
 :root {
   --foreground-rgb: 235, 235, 235;
   --background: 235, 235, 235;
   --border: 15, 222, 141;
+  --background: 31, 30, 47;
+  --color-primary: 115,65,255;
+  --color-terciary: 255, 156, 40;
+  --color-terciary-30: 255, 156, 40, 0.3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 31, 30, 47; */
-    --background: 31, 30, 47;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background));
+  overflow: hidden;
 }
+
+*{
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* ::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 8px;
+  background-color: transparent;
+} */
+
+/* Track (faixa) da barra de rolagem */
+/* ::-webkit-scrollbar-track {
+  background: rgba(var(--color-terciary-30));
+  padding-top: 10px;
+  border-radius: 8px;
+} */
+
+/* Alça (thumb) da barra de rolagem */
+/* ::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-terciary));
+  border-radius: 5px;
+} */
+
+
+
 
 @layer utilities {
   .text-balance {

@@ -1,14 +1,11 @@
-import HeaderApp from "@/presentation/header/header";
-import SvgBrennoDev from "@/presentation/svg/svg-brenno-dev";
-import { useTranslations } from "next-intl";
+'use client'
+import PageHome from "@/presentation/pages/page-home";
 
 
 export default function Home() {
-  const texts = useTranslations('index')
   return (
-    <main className=" ">
-        <HeaderApp/>
-        {texts('title')}
-      </main>
+    <div className="overflow-y-auto">
+      <PageHome/>
+    </div>
   );
 }
