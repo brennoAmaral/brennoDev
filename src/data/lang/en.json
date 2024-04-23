@@ -5,6 +5,10 @@
   },
   "home": {
     "ocupation": "fullstack developer",
-    "experienceText": "I have two years of experience as a developer, focusing mainly on developing frontend solutions. During this period, I worked on projects involving JavaScript, TypeScript, React.js, Styled Components and Tailwind. Furthermore, I had the opportunity to collaborate with the Fleury group, where I worked on both the maintenance and construction of several projects, including progressive web applications (PWAs) and websites for their client."
+    "experience-text": "I have two years of experience as a developer, focusing mainly on developing frontend solutions. During this period, I worked on projects involving JavaScript, TypeScript, React.js, Styled Components and Tailwind. Furthermore, I had the opportunity to collaborate with the Fleury group, where I worked on both the maintenance and construction of several projects, including progressive web applications (PWAs) and websites for their client."
+  },
+  "links":{
+    "view": "view",
+    "repository": "repository"
   }
 }

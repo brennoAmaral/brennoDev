@@ -33,7 +33,7 @@ const styleLangButton: IStyleLangButton = {
     overflow-hidden
     flex flex-col
     justify-around
-    bg-background-dark
+    bg-dark
     border-tertiary
     rounded-lg
     gap-2
