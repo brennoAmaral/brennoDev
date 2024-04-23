@@ -1,4 +1,4 @@
-import { IStyleLangMenu } from "@/presentation/lang-button/style-lang-button";
+import { IStyleLangMenu } from "@/presentation/components/lang-button/style-lang-button";
 import { ILangOptions, ILangsAcronymAvailable } from "./type-use-lang-button";
 
 export interface ILangMenu {

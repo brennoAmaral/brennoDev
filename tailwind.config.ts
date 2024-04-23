@@ -12,8 +12,7 @@ const config: Config = {
         "primary": "#7341FF",
         "secondary":"#0FDE8D",
         "tertiary":"#FF9C28",
-        "background-dark": "#1F1E2F",
-        "background-white": "#EBEBEB"
+        "dark": "#1F1E2F",
       },
     },
   },

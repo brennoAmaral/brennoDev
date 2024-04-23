@@ -1,12 +1,20 @@
-import styleBaseLayout from "../base-layout/style-base-layout";
+import { useTranslations } from "next-intl";
+import styleBaseLayout from "../components/base-layout/style-base-layout";
+import PillLink from "../components/pill-link/pill-link";
+import SvgEye from "../svg/svg-eye";
 import Avatar from "./avatar";
 import stylePageHome from "./style-page-home";
 
 export default function PageHome() {
-  
+  const t = useTranslations('links')
   return (
-      <div className={`${stylePageHome.wrapper} ${styleBaseLayout.div}`}>
-          <Avatar />
+    <div className={`${stylePageHome.wrapper} ${styleBaseLayout.div}`}>
+      <Avatar />
+      <div className="flex gap-1 justify-center">
+
+        <PillLink svg={<SvgEye color="secondary"/>} href="teste" text={t('view')} type="leaked" />
+        <PillLink svg={<SvgEye color="dark"/>} href="teste" text={t('view')} type="fill" />
       </div>
+    </div>
   )
 }

@@ -1,4 +1,4 @@
-import { IStyleLangButton } from "@/domain/types/langa-button/type-use-lang-button";
+import { IStyleLangButton } from "@/domain/types/components/lang-button/type-use-lang-button";
 
 
 
@@ -33,7 +33,7 @@ const styleLangButton: IStyleLangButton = {
     overflow-hidden
     flex flex-col
     justify-around
-    bg-background-dark
+    bg-dark
     border-tertiary
     rounded-lg
     gap-2

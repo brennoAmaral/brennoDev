@@ -1,5 +1,5 @@
 import IRoot from "@/domain/types/type-root";
-import HeaderApp from "@/presentation/header/header";
+import HeaderApp from "@/presentation/components/header/header";
 import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Inter } from "next/font/google";

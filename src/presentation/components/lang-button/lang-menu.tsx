@@ -1,5 +1,5 @@
-import { ILangMenu } from "@/domain/types/langa-button/type-lang-menu";
-import SvgClose from "../svg/svg-close";
+import { ILangMenu } from "@/domain/types/components/lang-button/type-lang-menu";
+import SvgClose from "../../svg/svg-close";
 
 export default function LangMenu(
   {

@@ -17,12 +17,12 @@ const stylePageHome: IStylePageHome = {
       
       sm:from-5%
       
-      via-background-dark 
+      via-dark 
       via-10%
       
       sm:via-20%
       
-      to-background-dark
+      to-dark
       to-75%    
     `,
     alignImageAndTexts: `
