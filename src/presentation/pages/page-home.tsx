@@ -12,8 +12,8 @@ export default function PageHome() {
       <Avatar />
       <div className="flex gap-1 justify-center">
 
-        <PillLink svg={<SvgEye color="secondary"/>} href="teste" text={t('view')} type="leaked" />
-        <PillLink svg={<SvgEye color="dark"/>} href="teste" text={t('view')} type="fill" />
+        <PillLink Svg={SvgEye} href="teste" text={t('view')} type="leaked" />
+        <PillLink Svg={SvgEye} href="teste" text={t('view')} type="fill" />
       </div>
     </div>
   )

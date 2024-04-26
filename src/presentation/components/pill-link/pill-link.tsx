@@ -7,15 +7,15 @@ import stylePillLink from "./style-pill-link";
 //   test: lazy(()=> import('@/presentation/svg/svg-eye'))
 // }
 
-const Svg = (name:string)=> import(`@/presentation/svg/svg-${name}`)
+// const Svg = (name:string)=> import(`@/presentation/svg/svg-${name}`)
 
-export default async function PillLink({href, type, svg, text}:IPillLink){
+export default async function PillLink({href, type, Svg, text}:IPillLink){
   const {defaultLink, label, svgColor} = stylePillLink
 
   
   return(
     <Link href={href} className={`${defaultLink} ${stylePillLink[type]} `}>
-        {svg}
+        {Svg && Svg(svgColor[type])}
         <label className={`${label[type]} ${label.defaultLabel}`} >
           {text}
         </label>

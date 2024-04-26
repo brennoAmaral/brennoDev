@@ -1,3 +1,4 @@
+import { ISvgLink } from '../../svg/type-svg-color-custom'
 
 import('@/presentation/svg/svg-br')
 
@@ -8,5 +9,5 @@ export interface IPillLink {
   text: string
   href: string
   type: IPillLinkClassName
-  svg?: React.ReactNode
+  Svg?: ISvgLink
 }
