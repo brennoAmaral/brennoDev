@@ -1,4 +1,4 @@
-  import pngAvatar from '@/presentation/assets/avatar.png';
+import pngAvatar from '@/presentation/assets/img/avatar.png';
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import stylePageHome from './style-page-home';

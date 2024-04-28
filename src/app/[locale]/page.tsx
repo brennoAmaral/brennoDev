@@ -4,7 +4,7 @@ import PageHome from "@/presentation/pages/page-home";
 
 export default function Home() {
   return (
-    <div className="overflow-y-auto">
+    <div className="overflow-auto">
       <PageHome/>
     </div>
   );
