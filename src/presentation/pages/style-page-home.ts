@@ -3,7 +3,7 @@ import { IStylePageHome } from "@/domain/types/pages/home/type-page-home"
 const stylePageHome: IStylePageHome = {
   wrapper: `
     bg-transparent 
-    h-[200vh]
+    h-[calc(100vh-60px)]
   `,
   avatar:{
     header:`

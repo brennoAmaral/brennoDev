@@ -5,7 +5,6 @@ const styleBaseLayout: IStyleBaseLayout = {
     rounded-t-xl
     mt-[60px]
     w-[100vw]
-    h-[100vh]
     overflow-y-auto
   `
 }
