@@ -1,7 +1,7 @@
 import { IClass } from "../../type-style";
 
 export interface IStyleCardXp{
-  title: IClass<HTMLElement>
+  h3: IClass<HTMLElement>
   wrapper: IClass<HTMLElement>
   card: IClass<HTMLElement>
   cardOverlay: {
@@ -9,4 +9,5 @@ export interface IStyleCardXp{
     svgsAlign: IClass<HTMLElement>
     description: IClass<HTMLElement>
   }
+  styleImg: IClass<HTMLElement>
 }

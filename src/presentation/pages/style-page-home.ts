@@ -8,22 +8,12 @@ const stylePageHome: IStylePageHome = {
   avatar:{
     header:`
       w-[100vw]
-      
       p-5
-
       bg-gradient-to-b 
       from-primary/60
       from-1%
-      
-      sm:from-5%
-      
       via-dark 
-      via-10%
-      
-      sm:via-20%
-      
-      to-dark
-      to-75%    
+      via-100%   
     `,
     alignImageAndTexts: `
       flex

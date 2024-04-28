@@ -1,5 +1,5 @@
 'use client'
-import useLangButton from "@/data/data-lang-button/use-lang-button"
+import useLangButton from "@/data/components/data-lang-button/use-lang-button"
 import { ILangMenu } from "@/domain/types/components/lang-button/type-lang-menu"
 import SvgTranslate from "../../svg/svg-lang"
 import LangMenu from "./lang-menu"
