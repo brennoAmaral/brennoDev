@@ -1,4 +1,3 @@
-
 const styleHeader = {
   header: `
     w-[100vw]
@@ -11,14 +10,14 @@ const styleHeader = {
     fixed
     top-0
   `,
-  toolbar:`
+  toolbar: `
     w-[100%]
     flex
     flex-row
     justify-between
     items-center
     max-w-[1260px]
-  `
-}
+  `,
+};
 
-export default styleHeader
+export default styleHeader;

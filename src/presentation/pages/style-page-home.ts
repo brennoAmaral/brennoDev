@@ -1,12 +1,12 @@
-import { IStylePageHome } from "@/domain/types/pages/home/type-page-home"
+import { IStylePageHome } from '@/domain/types/pages/home/type-page-home';
 
 const stylePageHome: IStylePageHome = {
   wrapper: `
     bg-transparent 
     h-[calc(100vh-60px)]
   `,
-  avatar:{
-    header:`
+  avatar: {
+    header: `
       w-[100vw]
       p-5
       bg-gradient-to-b 
@@ -27,7 +27,7 @@ const stylePageHome: IStylePageHome = {
       h-48
       rounded-full
     `,
-    alignTexts:`
+    alignTexts: `
       w-100%
       sm:max-w-[100%]
       md:max-w-[62vw]
@@ -35,8 +35,7 @@ const stylePageHome: IStylePageHome = {
       flex-col
       items-center
     `,
-    
-  }
-}
+  },
+};
 
-export default stylePageHome
+export default stylePageHome;

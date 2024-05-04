@@ -1,7 +1,7 @@
-import { IStyleRootLayout } from "@/domain/types/root/type-root-layout";
+import { IStyleRootLayout } from '@/domain/types/root/type-root-layout';
 
 const styleRootLayout: IStyleRootLayout = {
-  body: 'relative'
-}
+  body: 'relative',
+};
 
-export default styleRootLayout
+export default styleRootLayout;

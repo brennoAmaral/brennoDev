@@ -1,4 +1,4 @@
-import { IStylePillLink } from "@/domain/types/components/pill-link/type-style-pill-link";
+import { IStylePillLink } from '@/domain/types/components/pill-link/type-style-pill-link';
 
 const stylePillLink: IStylePillLink = {
   fill: 'bg-secondary shadow-[0_0px_6px_-0px_rgba(0,0,0,0.6)] shadow-secondary',
@@ -14,15 +14,15 @@ const stylePillLink: IStylePillLink = {
     justify-center
     items-center
   `,
-  label:{
+  label: {
     fill: 'text-dark',
     leaked: 'text-secondary',
-    defaultLabel: 'font-bold'
+    defaultLabel: 'font-bold',
   },
-  svgColor:{
+  svgColor: {
     fill: 'dark',
-    leaked: 'secondary'
-  } 
-}
+    leaked: 'secondary',
+  },
+};
 
-export default stylePillLink
+export default stylePillLink;

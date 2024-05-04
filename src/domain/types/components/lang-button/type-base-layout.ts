@@ -1,3 +1,3 @@
-export interface IBaseLayout{
-  children: React.ReactNode
+export interface IBaseLayout {
+  children: React.ReactNode;
 }

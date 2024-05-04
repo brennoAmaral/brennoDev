@@ -1,41 +1,31 @@
-'use client'
-import useLangButton from "@/data/components/data-lang-button/use-lang-button"
-import { ILangMenu } from "@/domain/types/components/lang-button/type-lang-menu"
-import SvgTranslate from "../../svg/svg-lang"
-import LangMenu from "./lang-menu"
-import styleLangButton from "./style-lang-button"
+'use client';
+import useLangButton from '@/data/components/data-lang-button/use-lang-button';
+import { ILangMenu } from '@/domain/types/components/lang-button/type-lang-menu';
+import SvgTranslate from '../../svg/svg-lang';
+import LangMenu from './lang-menu';
+import styleLangButton from './style-lang-button';
 
 export default function LangButton() {
-
-  const { 
-    setLangMenu,
-    langMenu,
-    langMenuHooks
-  } = useLangButton()
+  const { setLangMenu, langMenu, langMenuHooks } =
+    useLangButton();
 
   const langMenuParams: ILangMenu = {
     ...langMenuHooks,
-    styleLangButton
-  }
+    styleLangButton,
+  };
 
-  const {
-    label,
-    wrapper,
-    labelWhenMenuIsUp,
-  } = styleLangButton
+  const { label, wrapper, labelWhenMenuIsUp } =
+    styleLangButton;
 
   return (
-    <div
-      className={wrapper}
-    >
-      <div className={`${label} ${!langMenu ?? labelWhenMenuIsUp}`}
+    <div className={wrapper}>
+      <div
+        className={`${label} ${!langMenu ?? labelWhenMenuIsUp}`}
         onClick={() => setLangMenu(true)}
       >
         <SvgTranslate />
-      </div>  
-      <LangMenu
-        {...langMenuParams}
-      />
+      </div>
+      <LangMenu {...langMenuParams} />
     </div>
-  )
+  );
 }

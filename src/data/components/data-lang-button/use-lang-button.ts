@@ -1,44 +1,45 @@
-"use client";
+'use client';
 import {
   ILangOptions,
   ILangsAcronymAvailable,
   IUseLangButton,
-} from "@/domain/types/components/lang-button/type-use-lang-button";
-import SvgBr from "@/presentation/svg/svg-br";
-import SvgUsa from "@/presentation/svg/svg-usa";
-import { useTranslations } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+} from '@/domain/types/components/lang-button/type-use-lang-button';
+import SvgBr from '@/presentation/svg/svg-br';
+import SvgUsa from '@/presentation/svg/svg-usa';
+import { useTranslations } from 'next-intl';
+import { usePathname, useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 export default function useLangButton(): IUseLangButton {
   const router = useRouter();
   const pathName = usePathname();
   const [langMenu, setLangMenu] = useState<boolean>(false);
-  const t = useTranslations("langs");
+  const t = useTranslations('langs');
 
   const langListOptions: ILangOptions[] = [
     {
-      fullLang: t("pt"),
-      acronymLang: "pt",
+      fullLang: t('pt'),
+      acronymLang: 'pt',
       svg: SvgBr,
     },
     {
-      fullLang: t("en"),
-      acronymLang: "en",
+      fullLang: t('en'),
+      acronymLang: 'en',
       svg: SvgUsa,
     },
   ];
 
   function currentLang(): ILangsAcronymAvailable {
-    if (pathName.includes("pt")) {
-      return "pt";
+    if (pathName.includes('pt')) {
+      return 'pt';
     }
-    return "en";
+    return 'en';
   }
 
   function changeSizeMenu(): string {
-    if (langMenu) return "w-auto h-auto border-2 p-2 opacity-100 z-20";
-    return "w-0 h-0 z-0";
+    if (langMenu)
+      return 'w-auto h-auto border-2 p-2 opacity-100 z-20';
+    return 'w-0 h-0 z-0';
   }
 
   function changeLang(acronymLang: ILangsAcronymAvailable) {
@@ -50,7 +51,7 @@ export default function useLangButton(): IUseLangButton {
 
     matches[0] = `/${acronymLang}`;
 
-    const newUrl = matches.join("");
+    const newUrl = matches.join('');
     setLangMenu(false);
     router.push(newUrl);
   }
