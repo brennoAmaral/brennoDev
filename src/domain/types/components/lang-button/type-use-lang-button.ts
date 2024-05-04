@@ -1,6 +1,6 @@
-import { IClass, IClassDiv } from "../../type-style";
+import { IClass, IClassDiv } from '../../type-style';
 
-export type ILangsAcronymAvailable = "pt" | "en";
+export type ILangsAcronymAvailable = 'pt' | 'en';
 
 export interface ILangOptions {
   fullLang: string;
@@ -8,7 +8,9 @@ export interface ILangOptions {
   svg: () => JSX.Element;
 }
 
-export type IChangeLang = (cronymLang: ILangsAcronymAvailable) => void;
+export type IChangeLang = (
+  cronymLang: ILangsAcronymAvailable,
+) => void;
 
 export interface IUseLangButton {
   langMenu: boolean;
@@ -21,7 +23,7 @@ export interface IUseLangButton {
     pathName: string;
     setLangMenu: (value: boolean) => void;
     changeSizeMenu: () => string;
-  }
+  };
 }
 
 export interface IStyleLangButton {
@@ -35,4 +37,8 @@ export interface IStyleLangButton {
   divCloseButton: IClassDiv;
 }
 
-export interface IStyleLangMenu extends Omit<IStyleLangButton, "wrapper" | "label" | "labelWhenMenuIsUp"> {}
+export interface IStyleLangMenu
+  extends Omit<
+    IStyleLangButton,
+    'wrapper' | 'label' | 'labelWhenMenuIsUp'
+  > {}

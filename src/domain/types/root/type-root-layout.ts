@@ -1,5 +1,5 @@
-import { IClass } from "../type-style";
+import { IClass } from '../type-style';
 
-export interface IStyleRootLayout{
-  body: IClass<HTMLBodyElement>
+export interface IStyleRootLayout {
+  body: IClass<HTMLBodyElement>;
 }

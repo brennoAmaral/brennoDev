@@ -1,4 +1,4 @@
-import { IStyleBaseLayout } from "@/domain/types/components/base-layout/type-base-layout";
+import { IStyleBaseLayout } from '@/domain/types/components/base-layout/type-base-layout';
 
 const styleBaseLayout: IStyleBaseLayout = {
   div: `
@@ -6,7 +6,7 @@ const styleBaseLayout: IStyleBaseLayout = {
     mt-[60px]
     w-[100vw]
     overflow-y-auto
-  `
-}
+  `,
+};
 
-export default styleBaseLayout
+export default styleBaseLayout;

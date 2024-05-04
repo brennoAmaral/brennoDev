@@ -1,8 +1,8 @@
-interface root{
-  children: React.ReactNode
-  params: {locale:string}
+interface root {
+  children: React.ReactNode;
+  params: { locale: string };
 }
 
-type IRoot = Readonly<root>
+type IRoot = Readonly<root>;
 
-export default IRoot
+export default IRoot;

@@ -1,13 +1,12 @@
-import { ISvgLink } from '../../svg/type-svg-color-custom'
+import { ISvgLink } from '../../svg/type-svg-color-custom';
 
-import('@/presentation/svg/svg-br')
+import('@/presentation/svg/svg-br');
 
-type IPillLinkClassName = 'fill' | 'leaked' 
-
+type IPillLinkClassName = 'fill' | 'leaked';
 
 export interface IPillLink {
-  text: string
-  href: string
-  type: IPillLinkClassName
-  Svg?: ISvgLink
+  text: string;
+  href: string;
+  type: IPillLinkClassName;
+  Svg?: ISvgLink;
 }

@@ -1,9 +1,7 @@
-import { IStyleLangButton } from "@/domain/types/components/lang-button/type-use-lang-button";
-
-
+import { IStyleLangButton } from '@/domain/types/components/lang-button/type-use-lang-button';
 
 const styleLangButton: IStyleLangButton = {
-  wrapper: "relative",
+  wrapper: 'relative',
   label: `
     w-9
     h-9

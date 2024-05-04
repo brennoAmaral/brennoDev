@@ -1,5 +1,5 @@
-import { IClass } from "../../type-style";
+import { IClass } from '../../type-style';
 
-export interface IStyleHeader{
-  header: IClass<HTMLElement>
+export interface IStyleHeader {
+  header: IClass<HTMLElement>;
 }
