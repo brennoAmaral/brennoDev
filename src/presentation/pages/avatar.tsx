@@ -16,7 +16,7 @@ export default function Avatar() {
   return (
     <header className={header}>
       <div className={alignImageAndTexts}>
-        <Image src={pngAvatar} alt="" className={image} />
+        <Image src={pngAvatar} alt="" className={image} priority={true}/>
         <div className={alignTexts}>
           <h1>{t('ocupation')}</h1>
           <p>{t('experience-text')}</p>

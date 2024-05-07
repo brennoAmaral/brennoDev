@@ -7,7 +7,7 @@ const stylePillLink: IStylePillLink = {
     w-[100%]
     rounded-full
     py-1
-
+    max-h-[45px]
     flex
     flex-grow
     gap-5
