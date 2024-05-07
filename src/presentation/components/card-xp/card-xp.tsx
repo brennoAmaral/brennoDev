@@ -1,7 +1,8 @@
-import useCardXp from '@/data/components/use-card-xp';
+'use client';
+import useCardXp from '@/data/components/card-xp/use-card-xp';
 import { ICardXp } from '@/domain/types/components/card-xp/type-card-xp';
 import Image from 'next/image';
-import { ReactNode } from 'react';
+import React from 'react';
 import styleCardXp from './style-card-xp';
 
 export default function CardXp({
@@ -28,7 +29,9 @@ export default function CardXp({
         <div
           className={`${cardOverlay.wrapper} ${opacityOverlay()}`}
         >
-            {arrSvg.map((Value: ReactNode) => Value)}
+          {arrSvg.map(
+            (Componente, index) =>  React.cloneElement(Componente, {key: index})
+          )}
           <p className={cardOverlay.description}>
             {description}
           </p>

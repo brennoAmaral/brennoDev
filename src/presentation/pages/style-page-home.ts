@@ -29,8 +29,7 @@ const stylePageHome: IStylePageHome = {
     `,
     alignTexts: `
       w-100%
-      sm:max-w-[100%]
-      md:max-w-[62vw]
+      max-w-[1025px]
       flex 
       flex-col
       items-center

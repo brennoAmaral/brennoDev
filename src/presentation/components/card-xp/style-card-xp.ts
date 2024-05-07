@@ -3,12 +3,15 @@ import { IStyleCardXp } from '@/domain/types/components/card-xp/type-style-card-
 const styleCardXp: IStyleCardXp = {
   h3: 'text-primary font-bold text-lg',
   wrapper: `
+    w-[100%]
+    h-[100%]
     flex
     flex-col
     gap-4
     align-center
     justify-center
-    max-w-[550px]
+    max-w-[450px]
+    max-h-[450px]
     `,
   card: `
     border-[3px]
