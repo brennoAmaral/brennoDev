@@ -4,7 +4,7 @@ const stylePillLink: IStylePillLink = {
   fill: 'bg-secondary shadow-[0_0px_6px_-0px_rgba(0,0,0,0.6)] shadow-secondary',
   leaked: 'bg-dark border-2 border-secondary',
   defaultLink: `
-    w-[100%]
+    w-full
     rounded-full
     py-1
     max-h-[45px]

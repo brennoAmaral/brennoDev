@@ -37,6 +37,6 @@ export const styleTimeLine: IStyleTimeLine ={
     justify-center
     items-center
     gap-1
-    w-[100%]
+    w-full
     `
 }

@@ -51,6 +51,62 @@ export default function PageHome() {
       ),
       title: 'TESTE',
     },
+    {
+      arrSvg: skills,
+      description: 'teste',
+      img: timesheet,
+      pillLink: (
+        <PillLink
+          Svg={SvgEye}
+          href="teste"
+          text={t('view')}
+          type="leaked"
+        />
+      ),
+      title: 'TESTE',
+    },
+    {
+      arrSvg: skills,
+      description: 'teste',
+      img: timesheet,
+      pillLink: (
+        <PillLink
+          Svg={SvgEye}
+          href="teste"
+          text={t('view')}
+          type="leaked"
+        />
+      ),
+      title: 'TESTE',
+    },
+    {
+      arrSvg: skills,
+      description: 'teste',
+      img: timesheet,
+      pillLink: (
+        <PillLink
+          Svg={SvgEye}
+          href="teste"
+          text={t('view')}
+          type="leaked"
+        />
+      ),
+      title: 'TESTE',
+    },
+    {
+      arrSvg: skills,
+      description: 'teste',
+      img: timesheet,
+      pillLink: (
+        <PillLink
+          Svg={SvgEye}
+          href="teste"
+          text={t('view')}
+          type="leaked"
+        />
+      ),
+      title: 'TESTE',
+    },
   ];
   return (
     <div
@@ -58,7 +114,7 @@ export default function PageHome() {
     >
       <Avatar />
       <SectionTimeLine title='TITULO INTERESSANTE!!!' experiences={ocupations}/>
-      <div className="w-[100%] max-w-[1260px] h-[500px] flex justify-center items-center ">
+      <div className="w-full max-w-[1260px] h-[500px] flex justify-center items-center ">
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const styleHeader = {
     top-0
   `,
   toolbar: `
-    w-[100%]
+    w-full
     flex
     flex-row
     justify-between
