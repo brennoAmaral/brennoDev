@@ -4,12 +4,17 @@ import { useTranslations } from 'next-intl';
 import styleBaseLayout from '../components/base-layout/style-base-layout';
 import PillLink from '../components/pill-link/pill-link';
 import SectionTimeLine from '../components/section-timel-line.tsx/section-time-line';
+import SvgDiscord from '../svg/svg-discord';
+import SvgEmail from '../svg/svg-email';
 import SvgEye from '../svg/svg-eye';
+import SvgGithub from '../svg/svg-github';
+import SvgLinkedin from '../svg/svg-linkedin';
 import SvgMySql from '../svg/svg-mysql';
 import SvgNext from '../svg/svg-next';
 import SvgPhp from '../svg/svg-php';
 import SvgTailwind from '../svg/svg-tailwind';
 import SvgTypescript from '../svg/svg-typescript';
+import SvgWhatsup from '../svg/svg-whatsup';
 import Avatar from './avatar';
 import stylePageHome from './style-page-home';
 
@@ -115,6 +120,11 @@ export default function PageHome() {
       <Avatar />
       <SectionTimeLine sectionTittle='TITULO INTERESSANTE!!!' experiences={ocupations}/>
       <div className="w-full max-w-[1260px] h-[500px] flex justify-center items-center ">
+        <SvgDiscord/>
+        <SvgEmail/>
+        <SvgWhatsup/>
+        <SvgGithub/>
+        <SvgLinkedin/>
       </div>
     </div>
   );
