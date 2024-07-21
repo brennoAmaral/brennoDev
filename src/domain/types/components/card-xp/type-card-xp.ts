@@ -4,6 +4,5 @@ export interface ICardXp {
   img: StaticImageData;
   pillLink: React.ReactNode;
   arrSvg: React.ReactElement<any, any>[];
-  title: string;
   description: string;
 }

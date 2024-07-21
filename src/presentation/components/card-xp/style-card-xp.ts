@@ -1,7 +1,6 @@
 import { IStyleCardXp } from '@/domain/types/components/card-xp/type-style-card-xp';
 
 const styleCardXp: IStyleCardXp = {
-  h3: 'text-primary font-bold text-lg',
   wrapper: `
     w-full
     h-full

@@ -1,4 +1,4 @@
-import { IExperiences } from '@/domain/types/components/section-timel-line.tsx/type-section-time-line';
+import { IExperience } from '@/domain/types/components/section-timel-line.tsx/type-section-time-line';
 import timesheet from '@/presentation/assets/img/timesheet.png';
 import { useTranslations } from 'next-intl';
 import styleBaseLayout from '../components/base-layout/style-base-layout';
@@ -22,7 +22,7 @@ export default function PageHome() {
     <SvgMySql />,
     <SvgPhp />,
   ];
-  const ocupations: IExperiences = [
+  const ocupations: IExperience[] = [
     {
       arrSvg: skills,
       description: 'teste',
@@ -35,7 +35,7 @@ export default function PageHome() {
           type="leaked"
         />
       ),
-      title: 'TESTE',
+      experiencTittle: '1',
     },
     {
       arrSvg: skills,
@@ -49,7 +49,7 @@ export default function PageHome() {
           type="leaked"
         />
       ),
-      title: 'TESTE',
+      experiencTittle: '2',
     },
     {
       arrSvg: skills,
@@ -63,7 +63,7 @@ export default function PageHome() {
           type="leaked"
         />
       ),
-      title: 'TESTE',
+      experiencTittle: '3',
     },
     {
       arrSvg: skills,
@@ -77,7 +77,7 @@ export default function PageHome() {
           type="leaked"
         />
       ),
-      title: 'TESTE',
+      experiencTittle: '4',
     },
     {
       arrSvg: skills,
@@ -91,7 +91,7 @@ export default function PageHome() {
           type="leaked"
         />
       ),
-      title: 'TESTE',
+      experiencTittle: '5',
     },
     {
       arrSvg: skills,
@@ -105,7 +105,7 @@ export default function PageHome() {
           type="leaked"
         />
       ),
-      title: 'TESTE',
+      experiencTittle: '6',
     },
   ];
   return (
@@ -113,7 +113,7 @@ export default function PageHome() {
       className={`${stylePageHome.wrapper} ${styleBaseLayout.div}`}
     >
       <Avatar />
-      <SectionTimeLine title='TITULO INTERESSANTE!!!' experiences={ocupations}/>
+      <SectionTimeLine sectionTittle='TITULO INTERESSANTE!!!' experiences={ocupations}/>
       <div className="w-full max-w-[1260px] h-[500px] flex justify-center items-center ">
       </div>
     </div>

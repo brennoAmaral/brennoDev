@@ -9,17 +9,15 @@ export default function CardXp({
   arrSvg,
   description,
   img,
-  pillLink,
-  title,
+  pillLink
 }: ICardXp) {
   const { setOverlay, showOvelay, opacityOverlay } =
     useCardXp();
-  const { card, cardOverlay, h3, wrapper, styleImg } =
+  const { card, cardOverlay, wrapper, styleImg} =
     styleCardXp;
 
   return (
     <div className={wrapper}>
-      <h3 className={h3}>{title}</h3>
       <div
         className={card}
         onMouseEnter={() => setOverlay(true)}
