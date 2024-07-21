@@ -12,31 +12,45 @@ export const styleTimeLine: IStyleTimeLine ={
   `,
   startLine: `
     grow
-    
-    bg-gradient-to-r
+    bg-gradient-to-b
     from-primary/50
     from-1%
     via-dark 
     via-100%
-    w-5/12
-    h-4      
+    w-3
+    h-[125px]
+    md:bg-gradient-to-r
+    md:w-5/12
+    md:h-4  
   `,
   endLine:`  
     grow
-    rounded-l-lg
-    bg-gradient-to-r
+    rounded-t-lg
+    bg-gradient-to-b
     from-primary
     from-1%
     via-primary/50 
     via-100% 
-    w-5/12
-    h-4
+    w-3
+    h-[125px]
+    sm:rounded-t-lg
+    sm:bg-gradient-to-b
+    md:rounded-l-lg
+    md:rounded-r-none
+    md:bg-gradient-to-r
+    md:w-5/12
+    md:h-4
   `,
   wrapper:`
     flex
     justify-center
     items-center
     gap-1
-    w-[100%]
+    h-full
+    sm:h-full 
+    flex-col
+    sm:flex-col
+    md:flex-row
+    md:w-full
     `
 }
